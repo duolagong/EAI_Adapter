@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.longtop.alsb.entity.BnkAcctpower" table="BNK_ACCTPOWER" schema="OSBSQL">
+        <id name="agentid" column="AGENTID"/>
+        <property name="acctid" column="ACCTID"/>
+        <property name="querypower" column="QUERYPOWER"/>
+        <property name="paypower" column="PAYPOWER"/>
+        <property name="billpower" column="BILLPOWER"/>
+        <property name="inputdate" column="INPUTDATE"/>
+        <property name="version" column="VERSION"/>
+        <property name="subbranchid" column="SUBBRANCHID"/>
+    </class>
+</hibernate-mapping>

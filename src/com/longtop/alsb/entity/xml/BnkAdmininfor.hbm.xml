@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.longtop.alsb.entity.BnkAdmininfor" table="BNK_ADMININFOR" schema="OSBSQL">
+        <id name="userversion" column="USERVERSION"/>
+        <property name="companynum" column="COMPANYNUM"/>
+        <property name="appendix" column="APPENDIX"/>
+        <property name="username" column="USERNAME"/>
+        <property name="idcard" column="IDCARD"/>
+        <property name="certnum" column="CERTNUM"/>
+    </class>
+</hibernate-mapping>

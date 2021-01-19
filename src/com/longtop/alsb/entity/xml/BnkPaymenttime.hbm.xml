@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.longtop.alsb.entity.BnkPaymenttime" table="BNK_PAYMENTTIME" schema="OSBSQL">
+        <id name="paymenttype" column="PAYMENTTYPE"/>
+        <property name="starttime" column="STARTTIME"/>
+        <property name="endtime" column="ENDTIME"/>
+        <property name="inputdate" column="INPUTDATE"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.longtop.alsb.entity.BnkPayInfor" table="BNK_PAY_INFOR" schema="OSBSQL">
+        <id name="ordernum" column="ORDERNUM"/>
+        <property name="version" column="VERSION"/>
+        <property name="agentid" column="AGENTID"/>
+        <property name="personflag" column="PERSONFLAG"/>
+        <property name="txmoment" column="TXMOMENT"/>
+        <property name="tranxml" column="TRANXML"/>
+        <property name="erpcode" column="ERPCODE"/>
+        <property name="erpmsg" column="ERPMSG"/>
+        <property name="erpxml" column="ERPXML"/>
+        <property name="erpdate" column="ERPDATE"/>
+        <property name="atomcode" column="ATOMCODE"/>
+        <property name="atommsg" column="ATOMMSG"/>
+        <property name="atomxml" column="ATOMXML"/>
+        <property name="atomdate" column="ATOMDATE"/>
+        <property name="osbcode" column="OSBCODE"/>
+        <property name="osbmsg" column="OSBMSG"/>
+        <property name="osbxml" column="OSBXML"/>
+        <property name="osbdate" column="OSBDATE"/>
+        <property name="banksyncode" column="BANKSYNCODE"/>
+        <property name="banksynmsg" column="BANKSYNMSG"/>
+        <property name="banksynxml" column="BANKSYNXML"/>
+        <property name="banksyndate" column="BANKSYNDATE"/>
+        <property name="bankfinalcode" column="BANKFINALCODE"/>
+        <property name="bankfinalmsg" column="BANKFINALMSG"/>
+        <property name="bankfinalxml" column="BANKFINALXML"/>
+        <property name="bankfinaldate" column="BANKFINALDATE"/>
+        <property name="payprocess" column="PAYPROCESS"/>
+        <property name="erpsyncode" column="ERPSYNCODE"/>
+        <property name="erpsynmsg" column="ERPSYNMSG"/>
+        <property name="erpsynxml" column="ERPSYNXML"/>
+        <property name="sendatomtag" column="SENDATOMTAG"/>
+        <property name="sendatomosbtag" column="SENDATOMOSBTAG"/>
+        <property name="subbranchid" column="SUBBRANCHID"/>
+        <property name="txamount" column="TXAMOUNT"/>
+        <property name="trandate" column="TRANDATE"/>
+        <property name="erpsyndate" column="ERPSYNDATE"/>
+        <property name="nbkcode" column="NBKCODE"/>
+        <property name="nbkmsg" column="NBKMSG"/>
+        <property name="nbkxml" column="NBKXML"/>
+        <property name="nbkdate" column="NBKDATE"/>
+        <property name="txcode" column="TXCODE"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.longtop.alsb.entity.BnkReceiptRule" table="BNK_RECEIPT_RULE" schema="OSBSQL">
+        <id name="agentid" column="AGENTID"/>
+        <property name="lookcount" column="LOOKCOUNT"/>
+        <property name="intervaltime" column="INTERVALTIME"/>
+        <property name="inputdate" column="INPUTDATE"/>
+    </class>
+</hibernate-mapping>

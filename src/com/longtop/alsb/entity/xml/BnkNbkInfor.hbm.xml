@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.longtop.alsb.entity.BnkNbkInfor" table="BNK_NBK_INFOR" schema="OSBSQL">
+        <id name="txserial" column="TXSERIAL"/>
+        <property name="version" column="VERSION"/>
+        <property name="subbranchid" column="SUBBRANCHID"/>
+        <property name="txmoment" column="TXMOMENT"/>
+        <property name="reccount" column="RECCOUNT"/>
+        <property name="inputdate" column="INPUTDATE"/>
+        <property name="agentid" column="AGENTID"/>
+        <property name="payresultiswait" column="PAYRESULTISWAIT"/>
+        <property name="tranxml" column="TRANXML"/>
+    </class>
+</hibernate-mapping>
