@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!--<property name="connection.datasource">JDBC/ESB</property>-->
+    <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@10.10.10.130:1521/auto</property>
+    <property name="hibernate.connection.username">osbsql</property>
+    <property name="hibernate.connection.password">Wyosb180105</property>
+
+    <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+    <!--采用jdbc独立引用程序-->
+    <property name="current_session_context_class">thread</property>
+    <property name="hibernate.jdbc.batch_size">30</property>
+    <property name="hibernate.jdbc.fetch_size">100</property>
+    <!--<property name="hibernate.generate_statistics">true</property>-->
+    <property name="hibernate.query.substitutions"> true=1 false=0 </property>
+    <!--<property name="myeclipse.connection.profile"> oracle_longtop </property>-->
+    <!--<property name="dialect"> org.hibernate.dialect.Oracle10gDialect</property>-->
+
+    <property name="hibernate.show_sql">true</property><!-- 将hibernate生成的sql语句打印到控制台 -->
+    <property name="hibernate.format_sql">false</property><!-- 将hibernate生成的sql语句格式化(语法缩进) -->
+    <property name="hibernate.current_session_context_class">thread</property><!-- 本地事务 -->
+
+    <!-- C3p0连接池 -->
+    <property name="hibernate.connection.provider_class">
+      org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider
+    </property>
+    <property name="hibernate.c3p0.maxsize">150</property>
+    <property name="hibernate.cp30.minsize">5</property>
+    <property name="hibernate.cp30.timeout">5000</property><!-- 超时时间 -->
+    <property name="hibernate.cp30.max_statements">100</property><!-- 指定连接池里最大缓存多少个Statement对象 -->
+    <property name="hibernate.cp30.idle_test_period">120</property><!-- 检查连接池里的空闲连接 ，单位是秒-->
+    <property name="hibernate.cp30.acquire_increment">5</property><!-- 一次创建的新连接数 -->
+    <property name="hibernate.cp30.validate">true</property> <!-- 每次都验证连接是否可用 -->
+
+    <!--
+       ## auto schema export  自动导出表结构. 自动建表
+       #hibernate.hbm2ddl.auto create        自动建表.每次框架运行都会创建新的表.以前表将会被覆盖,表数据会丢失.(开发环境中测试使用)
+       #hibernate.hbm2ddl.auto create-drop 自动建表.每次框架运行结束都会将所有表删除.(开发环境中测试使用)
+       #hibernate.hbm2ddl.auto update(推荐使用) 自动生成表.如果已经存在不会再生成.如果表有变动.自动更新表(不会删除任何数据).
+       #hibernate.hbm2ddl.auto validate    校验.不自动生成表.每次启动会校验数据库中表是否正确.校验失败.
+        -->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkAcctpower.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkAcctSpecial.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkAdmininfor.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkBankreceiptswitch.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkErpInfor.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkGsbh.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkNbkInfor.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkPaymenttime.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkPayquota.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkPayInfor.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkReceiptRecord.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkReceiptRule.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkBankid.hbm.xml"/>
+      <mapping resource="com/longtop/alsb/entity/xml/BnkTaskState.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

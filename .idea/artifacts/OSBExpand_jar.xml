@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="OSBExpand:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/OSBExpand_jar</output-path>
+    <root id="archive" name="OSBExpand.jar">
+      <element id="module-output" name="OSBExpand" />
+      <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.58" />
+    </root>
+  </artifact>
+</component>

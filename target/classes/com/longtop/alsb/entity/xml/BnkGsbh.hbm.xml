@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.longtop.alsb.entity.BnkGsbh" table="BNK_GSBH" schema="OSBSQL">
+        <id name="fQybh" column="F_QYBH"/>
+        <property name="fQymc" column="F_QYMC"/>
+        <property name="fMbdz" column="F_MBDZ"/>
+        <property name="fSftpIp" column="F_SFTP_IP"/>
+        <property name="fSftpPost" column="F_SFTP_POST"/>
+        <property name="fUser" column="F_USER"/>
+        <property name="fPassword" column="F_PASSWORD"/>
+        <property name="fBudgetSite" column="F_BUDGET_SITE"/>
+        <property name="fBudgetUser" column="F_BUDGET_USER"/>
+        <property name="fBudgetPassword" column="F_BUDGET_PASSWORD"/>
+        <property name="fSwitch" column="F_SWITCH"/>
+    </class>
+</hibernate-mapping>

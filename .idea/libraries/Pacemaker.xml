@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Pacemaker">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Incubator/out/artifacts/Pacemaker/Pacemaker.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
